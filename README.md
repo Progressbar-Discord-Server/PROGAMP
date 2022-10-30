@@ -1,30 +1,67 @@
-# Music-bot
+# PROGAMP *(A fork of [ZerioDev/Music-bot](https://github.com/ZerioDev/Music-bot))*
+
+This is the source code for PROGAMP, The music bot used in the [Progressbar95 +Plus!](https://discord.com/invite/HWFYmwsFX9) Discord server. This is a fork of [ZerioDev/Music-bot](https://github.com/ZerioDev/Music-bot).
+
+The rest of this file is mostly the same, but has been tweaked to have some more information.
+
+---
 
 A complete code to download for a music bot 🎧
 
-Looking for a code for a music bot ? This fully open source code is made for your project !
+Looking for a code for a music bot? This fully open source code is made for your project!
 
 If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
 
 *If you don't have any development knowledge, it is recommended to join the Discord support server to get help.*
 
+### 📑 Installation
+
+To use the project correctly you will need some tools.
+
+[FFmpeg](https://www.ffmpeg.org) to process audio
+
+[Node JS](https://nodejs.org/en/) (v16.6) for environment
+
+Without forgetting of course the code editor ^^
+
+To run the bot, make a clone of this repo
+
+```
+git clone https://github.com/Progressbar-Discord-Server/PROGAMP
+cd ./PROGAMP
+```
+
+Install all dependencies 
+
+```
+npm i
+```
+
+Run the bot!
+
+```
+npm start
+```
+
+Don't forget to [configure the configuration](https://github.com/Progressbar-Discord-Server/PROGAMP#-configuration) before you run the bot!
+
 ### ⚡ Configuration
 
-Open the configuration file located in the main folder `config.js`.
+Make a copy of `config.template.js` and rename it to `config.js`
 
 ```js
 module.exports = {
     app: {
-        token: 'XXX',
-        playing: 'by Zerio ❤️',
-        global: true,
-        guild: 'xxx'
+        token: '',
+        playing: 'PROGRESSBAR 95 (Main Theme) · Andrei Scerbatiuc',
+        global: false,
+        guild: ''
     },
 
     opt: {
         DJ: {
             enabled: false,
-            roleName: 'XXX',
+            roleName: '',
             commands: []
         },
         maxVol: 100,
@@ -32,7 +69,12 @@ module.exports = {
         loopMessage: false,
         spotifyBridge: true,
         defaultvolume: 75,
-        discordPlayer: {}
+        discordPlayer: {
+            ytdlOptions: {
+                quality: 'highestaudio',
+                highWaterMark: 1 << 25
+            }
+        }
     }
 };
 ```
@@ -58,22 +100,6 @@ Advanced configuration
 - `opt/spotifyBridge`, takes spotify songs/playlists and searches it on youtube and plays it (highly recommended)
 - `opt/defaultvolume`, is the defaul volume the queue will start at
 - `opt/discordPlayer`, options used by discord-player
-
-### 📑 Installation
-
-To use the project correctly you will need some tools.
-
-[FFmpeg](https://www.ffmpeg.org) to process audio
-
-[Node JS](https://nodejs.org/en/) (v16.6) for environment
-
-Without forgetting of course the code editor ^^
-
-Realized with ❤️ by [ZerioDev](https://github.com/ZerioDev).
-
-Please do not withdraw the license and keep the credits on this project.
-
-To have full access to the project and to be able to withdraw the credits a small donation is accepted. 
 
 ### 📝 ToDo 
 
