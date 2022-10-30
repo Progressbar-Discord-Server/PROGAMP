@@ -53,7 +53,7 @@ Make a copy of `config.template.js` and rename it to `config.js`
 module.exports = {
     app: {
         token: '',
-        playing: 'PROGRESSBAR 95 (Main Theme) · Andrei Scerbatiuc',
+        listening: 'PROGRESSBAR 95 (Main Theme) · Andrei Scerbatiuc',
         global: false,
         guild: ''
     },
@@ -82,7 +82,7 @@ module.exports = {
 Basic configuration
 
 - `app/token`, the token of the bot available on the [Discord Developers](https://discordapp.com/developers/applications) section
-- `app/playing`, the activity of the bot
+- `app/listening`, the listening activity of the bot
 - `app/global`, whether the commands will work on all servers or just one (if global they might take up to an hour to show up)
 - `app/guild`, the guild the slash command will be loaded to (this only applys if global is set to false)
 

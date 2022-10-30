@@ -1,7 +1,7 @@
 module.exports = {
     app: {
         token: '',
-        playing: 'PROGRESSBAR 95 (Main Theme) · Andrei Scerbatiuc',
+        listening: 'PROGRESSBAR 95 (Main Theme) · Andrei Scerbatiuc',
         global: false,
         guild: ''
     },
